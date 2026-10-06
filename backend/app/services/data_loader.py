@@ -83,5 +83,12 @@ def load_jdc_stores() -> list[dict]:
     return _load_json("mock_jdc_stores.json")
 
 
+@lru_cache
+def load_jdc_wayfinder() -> dict:
+    """JDC 면세점 매장·입점 브랜드·Gate 동선 그래프."""
+    with (PROCESSED_DIR / "jdc_wayfinder.json").open(encoding="utf-8") as f:
+        return json.load(f)
+
+
 def get_place_by_id(place_id: str) -> dict | None:
     return next((p for p in load_places() if p["id"] == place_id), None)

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import axios from "axios";
 import PlannerConditionBar, { type PlannerValue } from "../components/PlannerConditionBar";
 import PlaceCard from "../components/PlaceCard";
 import PlaceMap, { type MapMarker } from "../components/PlaceMap";
@@ -7,6 +8,7 @@ import ItineraryTimeline from "../components/ItineraryTimeline";
 import AirportFlowPanel from "../components/AirportFlowPanel";
 import AirportFacilityPanel from "../components/AirportFacilityPanel";
 import JdcStorePanel from "../components/JdcStorePanel";
+import JdcShoppingRoute from "../components/JdcShoppingRoute";
 import AirportKakaoMap from "../components/AirportKakaoMap";
 import { postRecommendationsFull } from "../api/recommendation";
 import { postRag, toCandidatePlaces } from "../api/rag";
@@ -157,8 +159,14 @@ export default function PlannerPage() {
         setAirportPlan(null);
       }
       setTimeout(() => scrollToId("step-itinerary"), 100);
-    } catch {
-      setItinError("일정을 만들지 못했습니다. 잠시 후 다시 시도해 주세요.");
+    } catch (e) {
+      console.error("[itinerary] 일정 생성 실패", e);
+      const detail = axios.isAxiosError(e)
+        ? e.response
+          ? `HTTP ${e.response.status}`
+          : `${e.code ?? "NETWORK"}: ${e.message}`
+        : "알 수 없는 오류";
+      setItinError(`일정을 만들지 못했습니다 (${detail}). 잠시 후 다시 시도해 주세요.`);
     } finally {
       setItinLoading(false);
     }
@@ -460,6 +468,7 @@ export default function PlannerPage() {
 
           <AirportFacilityPanel facilities={airportPlan.airport_facilities} />
           <JdcStorePanel stores={airportPlan.jdc_stores} />
+          <JdcShoppingRoute departureTime={conditions?.profile.departure_time} />
 
           {/* 주의사항 — 접기 (삭제 금지 고지) */}
           <details className="group mt-6">
