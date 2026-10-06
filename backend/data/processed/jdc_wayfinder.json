@@ -1,0 +1,1190 @@
+{
+ "source": "https://jdc-shopping-guide.routing0214.workers.dev/ (JDC 웨이파인더) 의 매장·동선 데이터",
+ "extracted_at": "2026-10-06",
+ "walk": {
+  "outer_meters_per_weight": 1.2,
+  "outer_meters_per_minute": 70
+ },
+ "stores": [
+  {
+   "id": "jdc-east",
+   "name": "JDC 동편매장",
+   "short_name": "동편매장",
+   "location_label": "국내선 2층 격리대합실, Gate 2-3 사이",
+   "near_gates": [
+    2,
+    3
+   ],
+   "node_id": "jdc-east"
+  },
+  {
+   "id": "jdc-main",
+   "name": "JDC 본매장",
+   "short_name": "본매장",
+   "location_label": "국내선 2층 격리대합실, Gate 6-7 사이",
+   "near_gates": [
+    6,
+    7
+   ],
+   "node_id": "jdc-main"
+  },
+  {
+   "id": "jdc-west",
+   "name": "JDC 서편매장",
+   "short_name": "서편매장",
+   "location_label": "국내선 2층 격리대합실, Gate 11-12 사이",
+   "near_gates": [
+    11,
+    12
+   ],
+   "node_id": "jdc-west"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "gate-1",
+   "x": 60,
+   "type": "gate",
+   "label": "Gate 1"
+  },
+  {
+   "id": "gate-2",
+   "x": 160,
+   "type": "gate",
+   "label": "Gate 2"
+  },
+  {
+   "id": "junction-east",
+   "x": 210,
+   "type": "junction",
+   "label": ""
+  },
+  {
+   "id": "gate-3",
+   "x": 260,
+   "type": "gate",
+   "label": "Gate 3"
+  },
+  {
+   "id": "gate-4",
+   "x": 360,
+   "type": "gate",
+   "label": "Gate 4"
+  },
+  {
+   "id": "gate-5",
+   "x": 460,
+   "type": "gate",
+   "label": "Gate 5"
+  },
+  {
+   "id": "gate-6",
+   "x": 560,
+   "type": "gate",
+   "label": "Gate 6"
+  },
+  {
+   "id": "junction-main",
+   "x": 610,
+   "type": "junction",
+   "label": ""
+  },
+  {
+   "id": "gate-7",
+   "x": 660,
+   "type": "gate",
+   "label": "Gate 7"
+  },
+  {
+   "id": "gate-8",
+   "x": 760,
+   "type": "gate",
+   "label": "Gate 8"
+  },
+  {
+   "id": "gate-9",
+   "x": 860,
+   "type": "gate",
+   "label": "Gate 9"
+  },
+  {
+   "id": "gate-10",
+   "x": 960,
+   "type": "gate",
+   "label": "Gate 10"
+  },
+  {
+   "id": "gate-11",
+   "x": 1060,
+   "type": "gate",
+   "label": "Gate 11"
+  },
+  {
+   "id": "junction-west",
+   "x": 1110,
+   "type": "junction",
+   "label": ""
+  },
+  {
+   "id": "gate-12",
+   "x": 1160,
+   "type": "gate",
+   "label": "Gate 12"
+  },
+  {
+   "id": "jdc-east",
+   "x": 210,
+   "type": "store",
+   "label": "JDC 동편매장"
+  },
+  {
+   "id": "jdc-main",
+   "x": 610,
+   "type": "store",
+   "label": "JDC 본매장"
+  },
+  {
+   "id": "jdc-west",
+   "x": 1110,
+   "type": "store",
+   "label": "JDC 서편매장"
+  }
+ ],
+ "edges": [
+  {
+   "from": "gate-1",
+   "to": "gate-2",
+   "weight": 100
+  },
+  {
+   "from": "gate-2",
+   "to": "junction-east",
+   "weight": 50
+  },
+  {
+   "from": "junction-east",
+   "to": "gate-3",
+   "weight": 50
+  },
+  {
+   "from": "gate-3",
+   "to": "gate-4",
+   "weight": 100
+  },
+  {
+   "from": "gate-4",
+   "to": "gate-5",
+   "weight": 100
+  },
+  {
+   "from": "gate-5",
+   "to": "gate-6",
+   "weight": 100
+  },
+  {
+   "from": "gate-6",
+   "to": "junction-main",
+   "weight": 50
+  },
+  {
+   "from": "junction-main",
+   "to": "gate-7",
+   "weight": 50
+  },
+  {
+   "from": "gate-7",
+   "to": "gate-8",
+   "weight": 100
+  },
+  {
+   "from": "gate-8",
+   "to": "gate-9",
+   "weight": 100
+  },
+  {
+   "from": "gate-9",
+   "to": "gate-10",
+   "weight": 100
+  },
+  {
+   "from": "gate-10",
+   "to": "gate-11",
+   "weight": 100
+  },
+  {
+   "from": "gate-11",
+   "to": "junction-west",
+   "weight": 50
+  },
+  {
+   "from": "junction-west",
+   "to": "gate-12",
+   "weight": 50
+  },
+  {
+   "from": "junction-east",
+   "to": "jdc-east",
+   "weight": 30
+  },
+  {
+   "from": "junction-main",
+   "to": "jdc-main",
+   "weight": 30
+  },
+  {
+   "from": "junction-west",
+   "to": "jdc-west",
+   "weight": 30
+  }
+ ],
+ "category_labels": {
+  "liquor": "주류",
+  "fashion": "패션",
+  "cosmetics": "화장품",
+  "fragrance": "향수",
+  "sunglasses": "선글라스",
+  "jewelry": "쥬얼리/시계",
+  "tobacco": "담배",
+  "food": "식품",
+  "ginseng": "홍삼",
+  "event": "이벤트",
+  "service": "서비스",
+  "other": "기타"
+ },
+ "shops": [
+  {
+   "id": "east-9842",
+   "name": "담배",
+   "code": "9842,9843",
+   "category": "tobacco",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9841",
+   "name": "이벤트 팝업",
+   "code": "9841",
+   "category": "event",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9838",
+   "name": "아쿠아디파르마",
+   "code": "9838",
+   "category": "fragrance",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9836",
+   "name": "불가리",
+   "code": "9836",
+   "category": "jewelry",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9839",
+   "name": "선글라스",
+   "code": "9839",
+   "category": "sunglasses",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": [
+    "다움",
+    "SANDRO",
+    "폴리스",
+    "페라가모",
+    "셀린느",
+    "나이키"
+   ]
+  },
+  {
+   "id": "east-9837",
+   "name": "오피신 유니버셀 불리",
+   "code": "9837",
+   "category": "fragrance",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": [
+    "구찌",
+    "티파니",
+    "펜벤코",
+    "버버리",
+    "마크제이콥스",
+    "CK",
+    "폴로"
+   ]
+  },
+  {
+   "id": "east-9835",
+   "name": "딥티크",
+   "code": "9835",
+   "category": "fragrance",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": [
+    "산타마리아노벨라"
+   ]
+  },
+  {
+   "id": "east-9834",
+   "name": "반티룩스",
+   "code": "9834",
+   "category": "fashion",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9845",
+   "name": "자민경",
+   "code": "9845",
+   "category": "fashion",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9833",
+   "name": "펜할리곤스",
+   "code": "9833",
+   "category": "fragrance",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9832",
+   "name": "바이레도",
+   "code": "9832",
+   "category": "fragrance",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9831",
+   "name": "에르메스",
+   "code": "9831",
+   "category": "fashion",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "east-9830",
+   "name": "샤넬",
+   "code": "9830",
+   "category": "fashion",
+   "store_id": "jdc-east",
+   "zone": "동측 매장",
+   "aliases": []
+  },
+  {
+   "id": "main-liq-header1",
+   "name": "위스키/와인 세트",
+   "code": null,
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "뮤꼬",
+    "잭다니엘",
+    "버팔로트레이스",
+    "레미마틴",
+    "브룩라디"
+   ]
+  },
+  {
+   "id": "main-liq-header2",
+   "name": "위스키 세트",
+   "code": null,
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "로얄살루트",
+    "시바스리갈",
+    "글렌모렌지",
+    "더글렌리벳",
+    "롱본"
+   ]
+  },
+  {
+   "id": "main-liq-header3",
+   "name": "위스키 세트",
+   "code": null,
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "듀어스",
+    "맥캘란",
+    "로얄브라클라",
+    "샴페인"
+   ]
+  },
+  {
+   "id": "main-liq-header4",
+   "name": "위스키 세트",
+   "code": null,
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "까뮤",
+    "달모어",
+    "보모어",
+    "산토리"
+   ]
+  },
+  {
+   "id": "main-9777",
+   "name": "글렌드로낙",
+   "code": "9777",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "테일러스포트",
+    "글렌글라사"
+   ]
+  },
+  {
+   "id": "main-9779",
+   "name": "부나하벤",
+   "code": "9779",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "사제락",
+    "우량예"
+   ]
+  },
+  {
+   "id": "main-9849",
+   "name": "마오타이",
+   "code": "9849",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "핫카이산",
+    "닷사이",
+    "닛카"
+   ]
+  },
+  {
+   "id": "main-9763",
+   "name": "듀퐁",
+   "code": "9763",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": []
+  },
+  {
+   "id": "main-9776",
+   "name": "발렌타인",
+   "code": "9776",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "주류",
+   "aliases": [
+    "아벨라워"
+   ]
+  },
+  {
+   "id": "main-9770",
+   "name": "만다리나덕",
+   "code": "9770",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9787",
+   "name": "투미",
+   "code": "9787",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9769",
+   "name": "빈폴",
+   "code": "9769",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9747",
+   "name": "부띠",
+   "code": "9747",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9784",
+   "name": "루이까또즈",
+   "code": "9784",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9786",
+   "name": "메트로시티",
+   "code": "9786",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9781",
+   "name": "닥스",
+   "code": "9781",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9772",
+   "name": "탈리",
+   "code": "9772",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9774",
+   "name": "스노우피크",
+   "code": "9774",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9773",
+   "name": "쌤소나이트",
+   "code": "9773",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9725",
+   "name": "해지스",
+   "code": "9725",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9759",
+   "name": "크리스콜프삭",
+   "code": "9759",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9768",
+   "name": "쿠론",
+   "code": "9768",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9782",
+   "name": "키플링",
+   "code": "9782",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9754",
+   "name": "질스튜어트",
+   "code": "9754",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9764",
+   "name": "캉골",
+   "code": "9764",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9765",
+   "name": "제이에스티나",
+   "code": "9765",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9775",
+   "name": "루즈앤라운지",
+   "code": "9775",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9771",
+   "name": "조이그라이슨",
+   "code": "9771",
+   "category": "fashion",
+   "store_id": "jdc-main",
+   "zone": "패션",
+   "aliases": []
+  },
+  {
+   "id": "main-9702",
+   "name": "르라보",
+   "code": "9702",
+   "category": "fragrance",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9741",
+   "name": "조말론",
+   "code": "9741",
+   "category": "fragrance",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9734",
+   "name": "에스티로더",
+   "code": "9734",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9711",
+   "name": "SK-II",
+   "code": "9711",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": [
+    "에스케이투"
+   ]
+  },
+  {
+   "id": "main-9735",
+   "name": "디올",
+   "code": "9735",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9740",
+   "name": "맥",
+   "code": "9740",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9713",
+   "name": "제주화장품",
+   "code": "9713",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9730",
+   "name": "사봉",
+   "code": "9730",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9712",
+   "name": "프레쉬",
+   "code": "9712",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9705",
+   "name": "바비브라운",
+   "code": "9705",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9733",
+   "name": "이솝",
+   "code": "9733",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9727",
+   "name": "리쥬란",
+   "code": "9727",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9715",
+   "name": "오휘",
+   "code": "9715",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": [
+    "후",
+    "빌리프"
+   ]
+  },
+  {
+   "id": "main-9719",
+   "name": "클라랑스",
+   "code": "9719",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9706",
+   "name": "클리니크",
+   "code": "9706",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": [
+    "랩시리즈",
+    "크리니크"
+   ]
+  },
+  {
+   "id": "main-9737",
+   "name": "시슬리",
+   "code": "9737",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9714",
+   "name": "아이오페",
+   "code": "9714",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9732",
+   "name": "메이크업포에버",
+   "code": "9732",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9721",
+   "name": "엘리자베스아덴",
+   "code": "9721",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9708",
+   "name": "키엘",
+   "code": "9708",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9710",
+   "name": "비오템",
+   "code": "9710",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9723",
+   "name": "입생로랑",
+   "code": "9723",
+   "category": "fragrance",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9736",
+   "name": "랑콤",
+   "code": "9736",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9722",
+   "name": "더바디샵",
+   "code": "9722",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9717",
+   "name": "록시땅",
+   "code": "9717",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9724",
+   "name": "베네피트",
+   "code": "9724",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9716",
+   "name": "톰포드",
+   "code": "9716",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9707",
+   "name": "프라다뷰티",
+   "code": "9707",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9709",
+   "name": "샤넬",
+   "code": "9709",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9767",
+   "name": "아쿠아디파르마",
+   "code": "9767",
+   "category": "fragrance",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": []
+  },
+  {
+   "id": "main-9728",
+   "name": "설화수",
+   "code": "9728",
+   "category": "cosmetics",
+   "store_id": "jdc-main",
+   "zone": "화장품/향수",
+   "aliases": [
+    "Sulwhasoo"
+   ]
+  },
+  {
+   "id": "main-9748",
+   "name": "셀린느",
+   "code": "9748",
+   "category": "sunglasses",
+   "store_id": "jdc-main",
+   "zone": "선글라스",
+   "aliases": [
+    "디올",
+    "구찌",
+    "오클리",
+    "톰포드",
+    "CK"
+   ]
+  },
+  {
+   "id": "main-9766",
+   "name": "로베르타피레디",
+   "code": "9766",
+   "category": "sunglasses",
+   "store_id": "jdc-main",
+   "zone": "선글라스",
+   "aliases": [
+    "라코스테",
+    "나이키"
+   ]
+  },
+  {
+   "id": "main-9746",
+   "name": "잔망루피",
+   "code": "9746",
+   "category": "other",
+   "store_id": "jdc-main",
+   "zone": "선글라스",
+   "aliases": []
+  },
+  {
+   "id": "main-9762",
+   "name": "디앤스와치",
+   "code": "9762",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9756",
+   "name": "다이아미",
+   "code": "9756",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9745",
+   "name": "문구",
+   "code": "9745",
+   "category": "other",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9744",
+   "name": "초코",
+   "code": "9744",
+   "category": "food",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9758",
+   "name": "분크",
+   "code": "9758",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9742",
+   "name": "정관장",
+   "code": "9742",
+   "category": "ginseng",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9789",
+   "name": "KT&G",
+   "code": "9789",
+   "category": "tobacco",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": [
+    "국산담배"
+   ]
+  },
+  {
+   "id": "main-9851",
+   "name": "발렌타인",
+   "code": "9851",
+   "category": "liquor",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9757",
+   "name": "파코",
+   "code": "9757",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9761",
+   "name": "스와로브스키",
+   "code": "9761",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9751",
+   "name": "제이에스티나",
+   "code": "9751",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9760",
+   "name": "제이에스티나",
+   "code": "9760",
+   "category": "jewelry",
+   "store_id": "jdc-main",
+   "zone": "쥬얼리/시계",
+   "aliases": []
+  },
+  {
+   "id": "main-9788",
+   "name": "외산담배",
+   "code": "9788",
+   "category": "tobacco",
+   "store_id": "jdc-main",
+   "zone": "담배/식품",
+   "aliases": [
+    "9701",
+    "9750"
+   ]
+  },
+  {
+   "id": "main-9731",
+   "name": "카카오",
+   "code": "9731",
+   "category": "food",
+   "store_id": "jdc-main",
+   "zone": "담배/식품",
+   "aliases": []
+  },
+  {
+   "id": "west-9964",
+   "name": "헤네시",
+   "code": "9964",
+   "category": "liquor",
+   "store_id": "jdc-west",
+   "zone": "서측 매장",
+   "aliases": [
+    "잭다니엘",
+    "듀퐁",
+    "와인"
+   ]
+  },
+  {
+   "id": "west-9790",
+   "name": "온라인 결제데스크",
+   "code": "9790",
+   "category": "service",
+   "store_id": "jdc-west",
+   "zone": "서측 매장",
+   "aliases": []
+  },
+  {
+   "id": "west-9778",
+   "name": "조니워커",
+   "code": "9778",
+   "category": "liquor",
+   "store_id": "jdc-west",
+   "zone": "서측 매장",
+   "aliases": [
+    "듀어스",
+    "닷사이",
+    "글렌모렌지"
+   ]
+  },
+  {
+   "id": "west-9823",
+   "name": "로얄살루트",
+   "code": "9823",
+   "category": "liquor",
+   "store_id": "jdc-west",
+   "zone": "서측 매장",
+   "aliases": [
+    "시바스리갈",
+    "발렌타인"
+   ]
+  },
+  {
+   "id": "west-9792",
+   "name": "국산담배",
+   "code": "9792-3",
+   "category": "tobacco",
+   "store_id": "jdc-west",
+   "zone": "서측 매장",
+   "aliases": [
+    "외산담배"
+   ]
+  }
+ ]
+}
